@@ -1,6 +1,6 @@
 {
   "name": "common-sass-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides some common SASS functions, mixins, and classes for faster frontend development.",
   "keywords": [
     "sass",
