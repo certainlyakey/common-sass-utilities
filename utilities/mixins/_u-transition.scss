@@ -1,0 +1,4 @@
+// allows to apply theme transitions while specifying properties 
+@mixin u-transition($transition, $props:'all') {
+  transition:#{$props} $transition;
+}

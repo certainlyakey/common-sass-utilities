@@ -1,0 +1,14 @@
+//@usage @include u-headings(){font-family:sans-serif; ...}
+@mixin u-headings($from: 1, $to: 6, $notfirstchild: false) {
+  @for $i from $from through $to {
+    @if $notfirstchild == true {
+      h#{$i}:not(:first-child) {
+        @content
+      }
+    } @else {
+      h#{$i} {
+        @content
+      }
+    }
+  }
+}

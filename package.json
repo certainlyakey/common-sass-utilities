@@ -1,0 +1,20 @@
+{
+  "name": "common-sass-utilities",
+  "version": "1.0.0",
+  "description": "Provides some common SASS functions, mixins, and classes for faster frontend development.",
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "mixin",
+    "utility",
+    "helper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/certainlyakey/common-sass-utilities"
+  },
+  "main": "_main.scss",
+  "author": "Aleksandr Beliaev",
+  "license": "MIT"
+}

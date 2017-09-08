@@ -1,0 +1,9 @@
+@mixin u-restore-link-styling($event:'') {
+  $selector:if($event != '', 'a:' + $event, '');
+  #{$selector} {
+    color:$color-link; 
+    &:focus {
+      color:white; 
+    }
+  }
+}

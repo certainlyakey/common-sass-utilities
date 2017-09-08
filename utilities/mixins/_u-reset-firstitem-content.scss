@@ -1,0 +1,13 @@
+@mixin u-reset-firstitem-content($inner-selector:false, $pseudoelement:'before') {
+  &:first-child {
+    @if $inner-selector != false {
+      #{$inner-selector}::#{$pseudoelement} {
+        content:normal; 
+      }
+    } @else {
+      &::#{$pseudoelement} {
+        content:normal;
+      }
+    }
+  }
+}

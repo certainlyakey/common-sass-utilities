@@ -1,0 +1,11 @@
+@mixin u-comma-separated-list($sel:'li') {
+  #{$sel} {
+    display:inline;
+    &::after {
+      content:', ';
+    }
+    &:last-child::after {
+      content:'';
+    }
+  }
+}

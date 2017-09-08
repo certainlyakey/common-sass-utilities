@@ -1,0 +1,6 @@
+// sass-lint:disable no-vendor-prefixes
+@mixin u-webkit-only {
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @content
+  }
+}

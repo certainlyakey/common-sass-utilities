@@ -1,0 +1,23 @@
+.u-screenreader-text {
+  @include u-screenreader-text;
+}
+
+.js-hidden-if-js-on {
+  #{$js-on} {
+    display:none; 
+  }
+}
+
+.u-inner-layer {
+  position:relative; 
+  z-index:1; 
+}
+
+.u-nowrap {
+  white-space:nowrap;
+}
+
+.js-hidden,
+.u-hidden {
+  display:none; 
+}

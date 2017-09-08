@@ -1,0 +1,8 @@
+// from Bourbon
+@mixin u-clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
