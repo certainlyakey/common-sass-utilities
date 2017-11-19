@@ -1,0 +1,10 @@
+@mixin u-align-content-vertically($align:center) {
+  display: flex;
+  flex-direction: column;
+  @if $align == center {
+    justify-content: center;
+  }
+  @if $align == bottom {
+    justify-content: flex-end;
+  }
+}
