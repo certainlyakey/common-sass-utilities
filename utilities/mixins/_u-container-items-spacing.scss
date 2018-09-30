@@ -1,0 +1,20 @@
+@mixin u-container-items-spacing($children-selectors, $spacing-x, $spacing-y:null) {
+  /* stylelint-disable declaration-block-no-redundant-longhand-properties */
+  $children-selectors:if(type-of($children-selectors) == 'map', $children-selectors, ($children-selectors));
+
+  margin-left:-$spacing-x / 2; 
+  margin-right:-$spacing-x / 2; 
+  margin-top:if($spacing-y, -$spacing-y / 2, null); 
+  margin-bottom:if($spacing-y, -$spacing-y / 2, null); 
+
+  @at-root {
+    @each $children-selector in $children-selectors {
+      #{$children-selector} {
+        padding-left:$spacing-x / 2; 
+        padding-right:$spacing-x / 2; 
+        padding-top:if($spacing-y, $spacing-y / 2, null); 
+        padding-bottom:if($spacing-y, $spacing-y / 2, null); 
+      }
+    }
+  }
+}
