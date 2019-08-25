@@ -1,0 +1,8 @@
+@mixin u-truncate-multiple-lines($lines: 3) {
+  /*! autoprefixer: off */
+  /* stylelint-disable value-no-vendor-prefix, property-no-vendor-prefix */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
