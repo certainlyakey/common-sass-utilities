@@ -1,3 +1,11 @@
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
+/** Math TIPS:
+  * 0 * N = 0
+  * so, 
+  * return $number / ($number * 0 + 1); => 
+  * return $number / (0 + 1); =>
+  * return $number / (1); => $number / 1;
+  * return $number; // this is end answer!!! :tada:
+*/
