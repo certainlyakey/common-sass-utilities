@@ -1,9 +1,0 @@
-@mixin u-edit-this($corner-x:left, $corner-y:top) {
-  position:fixed; 
-  #{$corner-x}:0; 
-  #{$corner-y}:0; 
-  opacity:0; 
-  &:hover {
-    opacity:1; 
-  }
-}

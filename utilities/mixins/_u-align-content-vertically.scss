@@ -1,4 +1,4 @@
-@mixin u-align-content-vertically($align:center) {
+@mixin u-align-content-vertically($align: center) {
   display: flex;
   flex-direction: column;
   @if $align == center {

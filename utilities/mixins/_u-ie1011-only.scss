@@ -1,6 +1,0 @@
-// sass-lint:disable no-vendor-prefixes
-@mixin u-ie1011-only {
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    @content
-  }
-}

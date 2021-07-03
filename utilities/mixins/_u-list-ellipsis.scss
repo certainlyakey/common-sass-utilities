@@ -1,7 +1,7 @@
-@mixin u-list-ellipsis($selector:'li') {
+@mixin u-list-ellipsis($selector: 'li') {
   #{$selector}:last-child {
     &::after {
-      content:'...'; 
+      content: '...'; 
     }
   }
 }

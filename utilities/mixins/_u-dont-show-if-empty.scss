@@ -1,5 +1,5 @@
 @mixin u-dont-show-if-empty {
   &:empty {
-    display:none; 
+    display: none; 
   }
 }

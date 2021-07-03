@@ -1,4 +1,4 @@
-@mixin u-container-items-spacing($item, $spacing-x, $spacing-y:null) {
+@mixin u-container-items-spacing($item, $spacing-x, $spacing-y: null) {
   /* stylelint-disable declaration-block-no-redundant-longhand-properties */
 
   margin-left: -$spacing-x / 2; 

@@ -1,9 +1,9 @@
-@mixin u-spacing-x($spacing, $spacing-type:'padding') {
-  #{$spacing-type}-left:$spacing; 
-  #{$spacing-type}-right:$spacing; 
+@mixin u-spacing-x($spacing, $spacing-type: 'padding' ) {
+  #{$spacing-type}-left: $spacing; 
+  #{$spacing-type}-right: $spacing; 
 }
 
-@mixin u-spacing-y($spacing, $spacing-type:'padding') {
-  #{$spacing-type}-top:$spacing; 
-  #{$spacing-type}-bottom:$spacing; 
+@mixin u-spacing-y($spacing, $spacing-type: 'padding') {
+  #{$spacing-type}-top: $spacing; 
+  #{$spacing-type}-bottom: $spacing; 
 }
