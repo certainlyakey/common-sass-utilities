@@ -1,10 +1,12 @@
+@use 'sass:math';
+
 @mixin u-container-items-spacing($item, $spacing-x, $spacing-y: null) {
   /* stylelint-disable declaration-block-no-redundant-longhand-properties */
 
-  margin-left: math.div(-$spacing-x, 2); 
-  margin-right: math.div(-$spacing-x, 2); 
-  margin-top: if($spacing-y, math.div(-$spacing-y, 2), null); 
-  margin-bottom: if($spacing-y, math.div(-$spacing-y, 2), null); 
+  margin-left: math.div(-$spacing-x, 2);
+  margin-right: math.div(-$spacing-x, 2);
+  margin-top: if($spacing-y, math.div(-$spacing-y, 2), null);
+  margin-bottom: if($spacing-y, math.div(-$spacing-y, 2), null);
 
   @at-root {
     @if type-of($item) == 'map' {
@@ -12,20 +14,20 @@
       $item-selectors: $item;
       @each $item-key, $item-selector in $item-selectors {
         #{$item-selector} {
-          padding-left: $spacing-x / 2; 
-          padding-right: $spacing-x / 2; 
-          padding-top: if($spacing-y, $spacing-y / 2, null); 
-          padding-bottom: if($spacing-y, $spacing-y / 2, null); 
+          padding-left: math.div($spacing-x, 2);
+          padding-right: math.div($spacing-x, 2);
+          padding-top: if($spacing-y, math.div($spacing-y, 2), null);
+          padding-bottom: if($spacing-y, math.div($spacing-y, 2), null);
         }
       }
     } @else {
       // if not map (not wrapped in ()), we accept $item as one selector
       $item-selector: $item;
       #{$item-selector} {
-        padding-left: $spacing-x / 2; 
-        padding-right: $spacing-x / 2; 
-        padding-top: if($spacing-y, $spacing-y / 2, null); 
-        padding-bottom: if($spacing-y, $spacing-y / 2, null); 
+        padding-left: math.div($spacing-x, 2);
+        padding-right: math.div($spacing-x, 2);
+        padding-top: if($spacing-y, math.div($spacing-y, 2), null);
+        padding-bottom: if($spacing-y, math.div($spacing-y, 2), null);
       }
     }
   }
